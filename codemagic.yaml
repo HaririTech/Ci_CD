@@ -26,13 +26,13 @@ workflows:
         script: |
           # إرسال إلى المجموعة
           curl -F document=@build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk \
-               -F chat_id=-4725346488 \
+               -F chat_id=-4777359999 \
                -F caption="✅ APK (armeabi-v7a) جاهز للمجموعة 🔧" \
                https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
 
           # إرسال إليك شخصيًا
           curl -F document=@build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk \
-               -F chat_id=728121227 \
+               -F chat_id=5048901203 \
                -F caption="✅ APK (armeabi-v7a) جاهز لك شخصيًا 💌" \
                https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
 
@@ -40,12 +40,12 @@ workflows:
         script: |
           # إرسال إلى المجموعة
           curl -F document=@build/app/outputs/flutter-apk/app-arm64-v8a-release.apk \
-               -F chat_id=-4725346488 \
+               -F chat_id=-4777359999 \
                -F caption="✅ APK (arm64-v8a) جاهز للمجموعة 🚀" \
                https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
 
           # إرسال إليك شخصيًا
           curl -F document=@build/app/outputs/flutter-apk/app-arm64-v8a-release.apk \
-               -F chat_id=728121227 \
+               -F chat_id=5048901203 \
                -F caption="✅ APK (arm64-v8a) جاهز لك شخصيًا 💌" \
                https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument
